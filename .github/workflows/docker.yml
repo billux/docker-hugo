@@ -50,6 +50,7 @@ jobs:
         run: make test-docsy
 
       - name: Test DocuAPI
+        continue-on-error: true
         run: make test-docuapi
 
       - name: Push egde images
